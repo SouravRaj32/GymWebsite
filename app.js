@@ -34,7 +34,7 @@ app.get('/', (req, res)=>{
     res.status(200).render('index.pug', params);
 })
 
-app.post('/contact', (req, res)=>{
+app.post('/', (req, res)=>{
     const myData = new Contact(req.body);
     myData.save()
     .then(()=>{
