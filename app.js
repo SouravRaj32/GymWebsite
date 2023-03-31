@@ -61,6 +61,6 @@ app.post('/', (req, res)=>{
 
 
 // START THE SERVER
-app.listen(port, ()=>{
-    console.log(`The application started successfully on port ${port}`);
+app.listen(port, '0.0.0.0',()=>{
+    console.log(`Server is running at port no ${port}`);
 });
