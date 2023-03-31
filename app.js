@@ -3,7 +3,7 @@ const path = require("path");
 const fs = require("fs");
 const app = express();
 const mongoose = require('mongoose');
-const port = 80;
+const port =process.env.PORT || 3000;
 mongoose.connect('mongodb+srv://souravraj32:Kc130deploy@souravbooking.fyxeibc.mongodb.net/dynamic?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
 .then(() => console.log('MongoDB connected...'))
 .catch(err => console.log(err));
