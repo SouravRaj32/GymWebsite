@@ -1,38 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <title>Using plain html in Pug</title> -->
     <title>#{title}</title>
 
-    style
-        include ../static/style.css
-
-</head>
-<body>
+    style include ../static/style.css
+  </head>
+  <body>
     <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Contact Us</a></li>
-        </ul>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Contact Us</a></li>
+      </ul>
     </nav>
     <div class="container">
-
-        <h2>Get this gym membership for 60$ - Fill this form now!</h2>
-        <!-- <p> 
+      <h2>Get this gym membership for 60$ - Fill this form now!</h2>
+      <!-- <p> 
             | #{content} 
             | This is a plain html using pug 
         </p> -->
 
-       <form action="/" method="post" class="myForm" id="contact">
-  <input type="text" class="myInput" name="name" placeholder="Enter your name..">
-  <input type="text" class="myInput" name="age" placeholder="Enter your Age">
-  <input type="text" class="myInput" name="gender" placeholder="Enter your Gender">
-  <input type="text" class="myInput" name="address" placeholder="Enter Your Address">
-  <input type="text" class="myInput" name="desc" placeholder="Enter More about you">
-</form>
+      <form action="/" method="post" class="myForm" id="contact">
+        <input
+          type="text"
+          class="myInput"
+          name="name"
+          placeholder="Enter your name.."
+        />
+        <input
+          type="text"
+          class="myInput"
+          name="age"
+          placeholder="Enter your Age"
+        />
+        <input
+          type="text"
+          class="myInput"
+          name="gender"
+          placeholder="Enter your Gender"
+        />
+        <input
+          type="text"
+          class="myInput"
+          name="address"
+          placeholder="Enter Your Address"
+        />
+        <input
+          type="text"
+          class="myInput"
+          name="desc"
+          placeholder="Enter More about you"
+        />
+      </form>
     </div>
-</body>
+  </body>
 </html>
